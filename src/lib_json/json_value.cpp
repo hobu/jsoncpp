@@ -395,7 +395,16 @@ Value::Value(Int64 value) {
   initBasic(intValue);
   value_.int_ = value;
 }
+Value::Value(long long value) {
+  initBasic(intValue);
+  value_.int_ = value;
+}
+
 Value::Value(UInt64 value) {
+  initBasic(uintValue);
+  value_.uint_ = value;
+}
+Value::Value(unsigned long long value) {
   initBasic(uintValue);
   value_.uint_ = value;
 }

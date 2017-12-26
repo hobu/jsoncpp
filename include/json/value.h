@@ -301,7 +301,9 @@ Json::Value obj_value(Json::objectValue); // {}
   Value(UInt value);
 #if defined(JSON_HAS_INT64)
   Value(Int64 value);
+  Value(long long value);
   Value(UInt64 value);
+  Value(unsigned long long value);
 #endif // if defined(JSON_HAS_INT64)
   Value(double value);
   Value(const char* value); ///< Copy til first 0. (NULL causes to seg-fault.)
